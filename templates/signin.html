@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+</head>
+<body>
+    <h1>Sign In</h1>
+    <form action="/signin" method="POST">
+        {{ form.csrf_token }}
+        {{ form.username.label }} {{ form.username() }} <br />
+        {{ form.password.label }} {{ form.password() }} <br />
+        {{ form.remember.label }} {{ form.remember() }} <br />
+        <button type="submit">Sign Up</button>
+    </form>
+
+</body>
+</html>
